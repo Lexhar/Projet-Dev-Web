@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+#cadre {
+    border: 2px solid fuchsia;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p#experience {
+    color: fuchsia;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+form {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form label, form input, form textarea {
+    width: 45%;
+    margin: 1px 0;
+    padding: 2px;
+    color: fuchsia;
+}
+
+#cadre h2 {
+    text-align: center;
+    color: fuchsia;
+    margin-bottom: 5px;
+}
+#tableau-droite {
+    display: inline-block;
+    border: 2px solid fuchsia;
+    padding: 20px;
+    margin-left: 20px;
+    width: 9%;
+    float: right;
+    text-align: left;
+    color: black;
+}
+
+#tableau-droite h2 {
+    text-align: right;
+    margin: 0;
+    color: fuchsia;
+}
+
+#tableau-droite label,
+#tableau-droite input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: auto;
+}
+
+#tableau-droite p {
+    color: fuchsia;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    border: none;
+    border-bottom: 1px dotted fuchsia;
+    background-color: transparent;
+    color: fuchsia;
+    margin-left: 10px;
+}
+
+textarea {
+    width: 80%;
+}
+
+input[type="date"] {
+    margin-left: 4px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    background-color: fuchsia;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div#en_tête {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+}
+
+div.logo, div.Utilisateur {
+    width: 49%;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+p.Utilisateur {
+    font-size: 60px;
+    color: rgb(181, 234, 125);
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+p.action {
+    font-size: 35px;
+    color: white;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 20px;
+    /* Ajoutez le code suivant pour annuler la modification précédente */
+    background: none;
+}
+
+
+
+div#onglet a:hover {
+    background-color: rgb(202, 202, 144);
+}
+
+div#onglet .jeune a {
+    color: rgb(212, 34, 173);
+    text-decoration: none;
+}
+
+div#onglet .référent a {
+    color: green;
+    text-decoration: none;
+}
+
+div#onglet .consultant a {
+    color: rgb(39, 129, 181);
+    text-decoration: none;
+}
+
+div#onglet .partenaires a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+div#onglet {
+    padding: 1%;
+    position: relative;;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 50%;
+    background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+}
+
+
+div#onglet div{
+    display: inline-block;
+    width: 24%;
+    font-size: 160%;
+    text-align: center;
+
+}

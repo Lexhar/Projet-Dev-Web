@@ -1,0 +1,159 @@
+div#en_tête { /*gère le rectangle gris de l'en-tête*/
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+}
+
+div.logo, div.Utilisateur { /* créer deux bloque un à gauche et l'autre à droite*/
+    width: 49%;
+    height: 150px;
+    margin-bottom: 5;
+}
+
+p.Utilisateur {
+    font-size: 60px;
+    color: rgb(86, 87, 85);
+    text-align: right;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+img {/*dimensionne l'image jeune*/
+    width: 35%;
+    height: 90%;
+    margin: 0px;
+}
+
+div#onglet a:hover { /*change de couleur les boutons lors d'un survol*/
+    background-color: rgb(202, 202, 144);
+}
+
+div#onglet .jeune a { /*gestion de chaque bouton*/
+    color: rgb(212, 34, 173);
+    text-decoration: none;
+}
+
+div#onglet .référent a {
+    color: green;
+    text-decoration: none;
+}
+
+div#onglet .consultant a {
+    color: rgb(39, 129, 181);
+    text-decoration: none;
+}
+
+div#onglet .partenaires a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+div#onglet { /*gestion de bloc entier*/
+    padding: 10px;;
+    position: relative;;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 50%;
+    background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+}
+
+
+div#onglet div{ /*gestion du positionnement des boutons*/
+    display: inline-block;
+    width: 24%;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+div.consigne_haut { /*gestion de la consigne de l'utilisateur*/
+    font-size: 25px;
+    color: #767676;
+    text-align: center;
+}
+
+.highlight {
+    color: rgb(78, 78, 216);
+}
+
+div#partenaires_haut {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 0%;
+}
+
+div#partenaires_haut div{ /*gestion du positionnement des boutons*/
+    display: inline-block;
+    width: 24%;
+    font-size: 25px;
+
+}
+
+.image_republique {
+    width: 280px; /* Ajustez la largeur et la hauteur à votre convenance */
+    height: 180px;
+}
+
+.image_region {
+    width: 180px;
+    height: 160px;
+    padding-bottom: 20px;
+}
+
+.image_pyrenees {
+    width: 200px;
+    height: 150px;
+    padding-bottom: 30px;
+}
+
+.image_assurance {
+    width: 260px;
+    height: 190px;
+}
+
+
+div#partenaires_bas {
+    margin-top: 0%;
+    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 10%;
+}
+
+div#partenaires_bas div{ /*gestion du positionnement des boutons*/
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+.assises {
+    width: 200px; /* Ajustez la largeur et la hauteur à votre convenance */
+    height: 150px;
+}
+
+.caf {
+    width: 250px;
+    height: 160px;
+}
+
+.msa {
+    width: 200px;
+    height: 160px;
+}
+
+.universite {
+    width: 200px;
+    height: 160px;
+}
+
+div.consigne_bas { /*gestion de la consigne de l'utilisateur*/
+    font-size: 25px;
+    color: #767676;
+    text-align: center;
+    margin-top: 3%;
+}
+

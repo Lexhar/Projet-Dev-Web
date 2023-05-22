@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Référent</title>
+        <link rel="stylesheet" type="text/css" href="page-référent.css">
+	</head>
+<body>
+<div id="en_tête">
+    <div class="logo">
+        <img src="/images/Jeunes.png" alt="logo">
+    </div>
+    <div class="Utilisateur">
+        <p class="Utilisateur">RÉFÉRENT</p>
+        <p class="action">Je confirme la valeur de ton engagement</p>
+    </div>
+</div>
+
+<div id="onglet">
+    <div class="jeune">
+        <a href="http://localhost/test/Projet-Dev-Web/index.php">JEUNE</a>
+    </div>
+    <div class="référent">
+        <a href="page-référent.html">RÉFÉRENT</a>
+    </div>
+    <div class="consultant">
+        <a href="page-consultant.html">CONSULTANT</a>
+    </div>
+    <div class="partenaires">
+        <a href="page-partenaires.html">PARTENAIRES</a>
+    </div>
+</div>
+
+<div class="consigne">
+    <p>Confirmez cette expérience et ce que vous avez pu constater au contact de ce jeune.</p>
+</div>
+
+
+<form action="proce.php">
+    <div id="questionnaire">
+        <div class="questionnaireGauche">
+            <div class="haut">
+                <p>COMMENTAIRE :</p>
+            </div>
+            <div class="bas">
+                <textarea name="commentaire" cols="28" rows="20">
+                </textarea>
+            </div>
+        </div>
+        <div class="questionnaireCentral">
+            <label for="nom">NOM :</label>
+            <input type="text" id="nom" name="nom"/><br><br>
+            <label for="nom">PRENOM :</label>
+            <input type="text" id="prenom" name="prenom"/><br><br>
+            <label for="nom">DATE DE NAISSANCE :</label>
+            <input type="text" id="date" name="date"/><br><br>
+            <label for="nom">Mail :</label>
+            <input type="email" id="mail" name="mail"/><br><br>
+            <label for="nom">Reseau social :</label>
+            <input type="text" id="réseauS" name="réseauS"/><br></br><br>
+            <label for="nom">PRESENTATION :</label>
+            <input type="text" id="presentation" name="presentation"/><br><br>
+            <label for="nom">DUREE :</label>
+            <input type="text" id="duree" name="duree"/>
+        </div>
+        <div class="questionnaireDroit">
+            <p class="savoirEtre">SES SAVOIRS ETRE</p>
+            <div class="tab">
+                <p class="confirme">Je confirme sa (son)*</p>
+                 <div class="radio">
+                    <input type="checkbox" name="savoir_etre" value="confiance"/>Confiance
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="bienveillance"/>Bienveillance
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="respect"/>Respect
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="honnêteté"/>Honnêteté
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="tolérence"/>Tolérance
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="juste"/>Juste
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="impartial"/>Impartial
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="travail"/>travail
+                    </br>
+                    <input type="checkbox" name="savoir_etre" value="motivé"/>Motivé
+                 </div>
+            </div>
+            <p class="nb_choix">* Faire 4 choix maximum</p>
+            <div class="bouton-valider">
+                <button type="submit" class="image-bouton">
+                <img src="/images/valider.png" alt="Bouton Valider">
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    
+
+
+
+</body>
+</html>
