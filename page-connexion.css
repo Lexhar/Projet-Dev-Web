@@ -134,6 +134,7 @@ img.connexion {
   .sup_gauche {
     color: white;
     font-size: 1.6vw;
+    text-align: center;
     background: linear-gradient(to left, rgb(184, 38, 220), rgb(220, 93, 243));
   }
 
@@ -143,12 +144,14 @@ img.connexion {
     background: linear-gradient(to left, rgb(5, 115, 23), rgb(95, 199, 99));
     color: white;
     font-size: 1.6vw;
+    text-align: center;
   }
 
   .sup_droit {
     background: linear-gradient(to left, rgb(10, 110, 172), rgb(75, 150, 235));
     color: white;
     font-size: 1.6vw;
+    text-align: center;
   }
 
 
@@ -156,35 +159,41 @@ img.connexion {
   .inf_droit {
     background: linear-gradient(to left, rgb(124, 190, 231), rgb(147, 187, 232));
     flex-grow: 1;
+    padding: 0.5vw;
   }
 
   .inf_milieu {
     background: linear-gradient(to left, rgb(154, 196, 16), rgb(208, 240, 169));
     flex-grow: 1;
+    padding: 0.5vw;
   }
 
   .inf_gauche {
     background: linear-gradient(to left, rgb(244, 125, 244), rgb(241, 209, 248));
     flex-grow: 1;
+    padding: 0.5vw;
   }
   
 
   div.milieu {
     border-style: groove;
     border-color: rgb(13, 103, 13);
-    border-width: 0.5vw;
+    border-width: 0.2vw;
+    border-radius: 0.5vw;
   }
 
   div.droit {
     border-style: groove;
     border-color: rgb(62, 147, 239);
-    border-width: 0.5vw;
+    border-width: 0.2vw;
     margin-right: 15vw;
+    border-radius: 0.5vw;
   }
 
   div.gauche {
     border-style: groove;
     border-color: rgb(185, 36, 205);
-    border-width: 0.5vw;
+    border-width: 0.2vw;
     margin-left: 15vw;
+    border-radius: 0.5vw;
   }

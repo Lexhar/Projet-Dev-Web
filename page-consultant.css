@@ -5,13 +5,12 @@ div#en_tête { /*créer le bloc gris*/
 }
 
 div.logo, div.Utilisateur {/*créer deux blocs qui occupent chacun la moitié du bloc gris*/
-  width: 49vw;
-  height: 17vh;
+  height: 10vw;
   margin-bottom: 5px;
 }
 
 p.Utilisateur { /*Affiche le type d'utilisateur */
-  font-size: 4vw;
+  font-size: 3.5vw;
   color: #0aaaf5;
   text-align: right;
   margin-bottom: 0%;
@@ -28,8 +27,7 @@ p.action {/*Donne le rôle de l'utilisateur*/
 }
 
 img {/*gère l'image qui est dans la div de gauche dans l'en-tête*/
-  width: 15vw;
-  height: 17vh;
+  height: 9.5vw;
   margin: 0px;
 }
 
@@ -93,7 +91,7 @@ div#onglet div{
   }
 
   p.consigne {
-    font-size: 25px;
+    font-size: 1.7vw;
     color: #0aaaf5;
   }
   
@@ -133,7 +131,7 @@ div#onglet div{
   }
 
   div.radio_gauche {
-    font-size: 20px;
+    font-size: 1.1vw;
     padding-top: 5%;
     padding-left: 10%;
     padding-bottom: 5%;
@@ -141,7 +139,7 @@ div#onglet div{
 }
 
 div.radio_droite {
-    font-size: 20px;
+    font-size: 1.1vw;
     padding-top: 5%;
     padding-left: 10%;
     padding-bottom: 5%;
@@ -152,7 +150,7 @@ p.savoirEtre_gauche {
     color: rgb(194, 86, 219);
     text-align: center;
     margin: 0%;
-    font-size: 24px;
+    font-size: 1.3vw;
     font-weight: bold;
 
 }
@@ -161,20 +159,20 @@ p.savoirEtre_droit {
     color: rgb(181, 234, 125);
     text-align: center;
     margin: 0%;
-    font-size: 24px;
+    font-size: 1.3vw;
     font-weight: bold;
 
 }
 
 p.confirme_gauche {
-    font-size: 20px;
+    font-size: 1.3vw;
     margin: 0px;
     padding: 5%;
     background: linear-gradient(to left, rgb(162, 13, 145), rgb(237, 185, 245));
 }
 
 p.confirme_droite{
-    font-size: 20px;
+    font-size: 1.3vw;
     margin: 0px;
     padding: 5%;
     background: linear-gradient(to left, rgb(54, 169, 0), rgb(211, 247, 161));

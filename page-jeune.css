@@ -108,7 +108,7 @@ div#questionnaire {
 
 div.questionnaireCentral {
         margin-left: 25vw;
-        font-size: 140%;
+        font-size: 1.4vw;
         border-style: groove;
         border-color: #cc20b2; 
         border-radius: 3%;
@@ -133,7 +133,7 @@ div.questionnaireDroit {
 
 
 div.radio {
-    font-size: 120%;
+    font-size: 1.2vw;
     padding-top: 5%;
     padding-left: 10%;
     padding-bottom: 5%;
@@ -146,7 +146,7 @@ div.tab {
 }
 
 div.haut {
-    font-size: 160%;
+    font-size: 1.6vw;
     color: white;
 }
 
@@ -164,13 +164,16 @@ p.savoirEtre {
     color: rgb(212, 34, 173);
     text-align: center;
     margin: 0%;
-    font-size: 160%;
+    font-size: 1.5vw;
     font-weight: bold;
 
 }
 
 p.confirme {
-    font-size: 130%;
+    font-size: 1.6vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
     margin: 0;
     padding: 5%;
     background: linear-gradient(to left, rgb(192, 23, 184), rgb(239, 174, 235));
@@ -183,21 +186,13 @@ input[type="text"], input[type="email"] {
     width: 50%;
     background-size: auto;
     font-size: 1.3vw;
-    background-image: url('/images/points_rose.png'); /* Remplacez 'points.png' par le chemin de votre image */
+    background-image: url('images/points_rose.png'); /* Remplacez 'points.png' par le chemin de votre image */
     background-repeat: repeat-x; /* Répète l'image horizontalement */
     background-position: 0 100%; /* Décale l'image de fond de 5px vers le bas */
     color: #1c0bb1; /* Change la couleur du texte. Remplacez #ff0000 par la couleur que vous voulez */
     font-family:Verdana, Geneva, Tahoma, sans-serif; /* Change la police d'écriture. Remplacez Arial, sans-serif par la police que vous voulez */
 }
 
-
-
-
-p.nb_choix {
-    margin: 0%;
-    color: rgb(181, 234, 125);
-    font-size: 110%;
-}
 
 
 
@@ -215,10 +210,7 @@ div.bouton-valider {
     transform: scale(1.5);
 }
 
-input[type="checkbox"]:checked + span {
-    background-color: aqua;
-    background-image: url('coché.png'); /* Votre image pour le bouton coché */
-}
+
 
 
 
