@@ -1,31 +1,14 @@
-<?php 
-        /*
-           Attention ! le host => l'adresse de la base de données et non du site !!
-        
-           Pour ceux qui doivent spécifier le port ex : 
-           $bdd = new PDO("mysql:host=CHANGER_HOST_ICI;dbname=CHANGER_DB_NAME;charset=utf8;port=3306", "CHANGER_LOGIN", "CHANGER_PASS");
-           
-         
-    try 
-    {
-        $bdd = new PDO("mysql:host=CHANGER_HOST_ICI;dbname=CHANGER_DB_NAME;charset=utf8", "CHANGER_LOGIN", "CHANGER_PASS");
-    }
-    catch(PDOException $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }*/
+<?php
 
-    $base = '/database/Base_Jeunes.db';
-
-// Connexion
-try {
-    $bd = new SQLite3($base);
-} catch (SQLiteException $e) {
-    die("La création ou l'ouverture de la base [$base] a échouée ".
-         "pour la raison suivante: ".$e->getMessage());
+function getJsonData() {
+    $jsonString = file_get_contents('data_base.json');
+    $jsonData = json_decode($jsonString, true);
+    return $jsonData;
 }
 
-// Inserer ici les requêtes
+function saveJsonData($data) {
+    $jsonString = json_encode($data, JSON_PRETTY_PRINT);
+    file_put_contents('data_base.json', $jsonString);
+}
 
-// Deconnexion
-$bd = null;
+?>

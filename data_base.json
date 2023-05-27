@@ -1,0 +1,13 @@
+{
+    "utilisateurs": [
+        {
+            "email": "exemple1@example.com",
+            "password": "motdepasse1",
+            "token": "token1"
+        },
+        {
+            "email": "rollanddoriandd@gmail.com",
+            "password": "x"
+        }
+    ]
+}

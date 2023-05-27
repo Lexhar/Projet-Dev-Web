@@ -1,38 +1,50 @@
-div#en_tête { /*gère le rectangle gris de l'en-tête*/
-    margin-top: 0px;
+
+
+
+div#en_tête {
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
 }
 
-div.logo, div.Utilisateur { /* créer deux bloque un à gauche et l'autre à droite*/
+div.logo, div.Utilisateur {
     width: 49%;
-    height: 150px;
+    height: 150%;
     margin-bottom: 5;
 }
 
 p.Utilisateur {
-    font-size: 60px;
-    color: rgb(86, 87, 85);
+    font-size: 360%;
+    color: rgb(110, 110, 109);
     text-align: right;
     margin-bottom: 0%;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 2%;
+    margin-right: 3%;
     font-weight: bold;
 }
 
+p.action {
+    font-size: 200%;
+    color: white;
+    text-align: right;
+    margin-top: 0%;
+    margin-right: 7%;
+}
 
-img {/*dimensionne l'image jeune*/
-    width: 35%;
-    height: 90%;
+img.jeune {/*gère l'image5 qui est dans la div de gauche dans l'en-tête*/
+    width: 15vw;
+    height: 17vh;
     margin: 0px;
 }
 
-div#onglet a:hover { /*change de couleur les boutons lors d'un survol*/
+
+
+div#onglet a:hover {/*effet de survole sur les différents types d'utilisateurs*/
     background-color: rgb(202, 202, 144);
 }
 
-div#onglet .jeune a { /*gestion de chaque bouton*/
+div#onglet .jeune a {
     color: rgb(212, 34, 173);
     text-decoration: none;
 }
@@ -52,24 +64,25 @@ div#onglet .partenaires a {
     text-decoration: none;
 }
 
-
-div#onglet { /*gestion de bloc entier*/
-    padding: 10px;;
+div#onglet {
+    display: flex; /* Ajouté ici */
+    padding: 0.5vw;
     position: relative;;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 50%;
+    width: 50vw;
     background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+    justify-content: space-around; /* Assurez-vous qu'il y a un espace autour des éléments */
 }
 
-
-div#onglet div{ /*gestion du positionnement des boutons*/
+div#onglet div{
+    flex: 1; /* Ajouté ici */
     display: inline-block;
-    width: 24%;
-    font-size: 25px;
+    width: 24vw; /* Réduit à partir de 24vw */
+    font-size: 1.7vw;
     text-align: center;
-
 }
+
 
 div.consigne_haut { /*gestion de la consigne de l'utilisateur*/
     font-size: 25px;

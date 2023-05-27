@@ -1,3 +1,6 @@
+
+
+
 div#en_tête {
     margin-top: 0%;
     display: flex;
@@ -13,7 +16,7 @@ div.logo, div.Utilisateur {
 
 p.Utilisateur {
     font-size: 360%;
-    color: rgb(181, 234, 125);
+    color: rgb(74, 132, 13);
     text-align: right;
     margin-bottom: 0%;
     margin-top: 2%;
@@ -29,14 +32,17 @@ p.action {
     margin-right: 7%;
 }
 
-
-img {
-    width: 35%;
-    height: 90%;
-    margin: 0%;
+img.jeune {/*gère l'image5 qui est dans la div de gauche dans l'en-tête*/
+    width: 18vw;
+    height: 17vh;
+    margin: 0px;
 }
 
-div#onglet a:hover {
+img.valider {
+    width: 5vw;
+}
+
+div#onglet a:hover {/*effet de survole sur les différents types d'utilisateurs*/
     background-color: rgb(202, 202, 144);
 }
 
@@ -60,27 +66,27 @@ div#onglet .partenaires a {
     text-decoration: none;
 }
 
-
 div#onglet {
-    padding: 1%;
+    display: flex; /* Ajouté ici */
+    padding: 0.5vw;
     position: relative;;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 50%;
+    width: 50vw;
     background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
+    justify-content: space-around; /* Assurez-vous qu'il y a un espace autour des éléments */
 }
 
-
 div#onglet div{
+    flex: 1; /* Ajouté ici */
     display: inline-block;
-    width: 24%;
-    font-size: 160%;
+    width: 24vw; /* Réduit à partir de 24vw */
+    font-size: 1.7vw;
     text-align: center;
-
 }
 
 div.consigne {
-    font-size: 120%;
+    font-size: 1.6vw;
     color: #1cae34;
     text-align: center;
     margin-bottom: 3%;
@@ -209,14 +215,6 @@ input[type="checkbox"]:checked + span {
     background-color: aqua;
     background-image: url('coché.png'); /* Votre image pour le bouton coché */
 }
-
-body {
-    background-image: url(/images/fond);
-}
-
-
-    
-
 
 
 

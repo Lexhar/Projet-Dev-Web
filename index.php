@@ -48,7 +48,7 @@
             
             <form action="connexion.php" method="post">
                 <h2 class="text-center">Connexion compte Jeune</h2>
-                <div class="jeune"><img src="Jeunes.png" alt="logo Jeune"></div>       
+                <div class="jeune"><img src="images/Jeunes.png" alt="logo Jeune"></div>       
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
                 </div>

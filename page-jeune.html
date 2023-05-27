@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Jeune</title>
+    <link rel="stylesheet" type="text/css" href="page-jeune.css">
+</head>
+<body>
+<div id="en_tête">
+    <div class="logo">
+        <img class="jeune" src="images/Jeunes.png" alt="logo">
+    </div>
+    <div class="Utilisateur">
+        <p class="Utilisateur" >JEUNE</p>
+        <p class="action">Je donne de la valeur à mon engagement</p>
+    </div>
+</div>
+
+<div id="conteneur">
+    <div id="onglet">
+        <div class="jeune">
+            <a href="page-jeune.html">JEUNE</a>
+        </div>
+        <div class="référent">
+            <a href="page-référent.html">RÉFÉRENT</a>
+        </div>
+        <div class="consultant">
+            <a href="page-consultant.html">CONSULTANT</a>
+        </div>
+        <div class="partenaires">
+            <a href="page-partenaires.html">PARTENAIRES</a>
+        </div>
+    </div>
+
+    <div class="connexion">
+        <a href="index.php">
+            <button type="button" class="image-bouton">
+                <img class="connexion" src="images/deconnexion.png" alt="Bouton Valider">
+            </button>
+        </a>
+    </div>
+    
+</div>
+
+<div class="consigne"><p>Décrivez votre expérience et mettez en avant ce que vous en avez retiré.</p></div>
+
+
+
+<div class="conteneur">
+    <form>
+        <div id="questionnaire">
+            
+            <div class="questionnaireCentral">
+                <label for="nom">NOM :</label>
+                <input type="text" id="nom" name="nom"/><br><br>
+                <label for="nom">PRENOM :</label>
+                <input type="text" id="prenom" name="prenom"/><br><br>
+                <label for="nom">DATE DE NAISSANCE :</label>
+                <input type="text" id="date" name="date"/><br><br>
+                <label for="nom">Mail :</label>
+                <input type="email" id="mail" name="mail"/><br><br>
+                <label for="nom">Reseau social :</label>
+                <input type="text" id="réseauS" name="réseauS"/><br></br><br>
+                <label for="nom">MON ENGAGEMENT :</label>
+                <input type="text" id="presentation" name="presentation"/><br><br>
+                <label for="nom">DUREE :</label>
+                <input type="text" id="duree" name="duree"/>
+            </div>
+            <div class="questionnaireDroit">
+                <p class="savoirEtre">MES SAVOIRS ETRE</p>
+                <div class="tab">
+                    <p class="confirme">Je confirme sa (son)*</p>
+                     <div class="radio">
+                        <input type="checkbox" name="savoir_etre" value="confiance"/>Confiance
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="bienveillance"/>Bienveillance
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="respect"/>Respect
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="honnêteté"/>Honnêteté
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="tolérence"/>Tolérance
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="juste"/>Juste
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="impartial"/>Impartial
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="travail"/>travail
+                        </br>
+                        <input type="checkbox" name="savoir_etre" value="motivé"/>Motivé
+                     </div>
+                </div>
+                
+                <div class="bouton-valider">
+                    <button type="submit" class="image-bouton">
+                    <img class="valider" src="/images/valider_rose.png" alt="Bouton Valider">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
