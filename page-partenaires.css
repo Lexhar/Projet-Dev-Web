@@ -103,29 +103,35 @@ div#partenaires_haut div{ /*gestion du positionnement des boutons*/
     width: 24%;
     font-size: 25px;
     margin-top: 2vw;
+    margin-left: 1.vw;
 
 }
 
 .image_republique {
-    width: 20vw; /* Ajustez la largeur et la hauteur à votre convenance */
+    width: 22vw; /* Ajustez la largeur et la hauteur à votre convenance */
     height: 12vw;
+
 }
 
 .image_region {
-    width: 14vw;
+    width: 15vw;
     height: 11vw;
     padding-bottom: 20px;
+    margin-left: 2vw;
 }
 
 .image_pyrenees {
     width: 15vw;
     height: 10vw;
     padding-bottom: 30px;
+    margin-left: 4vw;
 }
 
 .image_assurance {
     width: 15vw;
     height: 11vw;
+    margin-left: 4vw;
+    
 }
 
 
@@ -133,7 +139,7 @@ div#partenaires_bas {
     margin-top: 0%;
     padding-right: 5%;
     padding-left: 2%;
-    padding-right: 10%;
+    
 }
 
 div#partenaires_bas div{ /*gestion du positionnement des boutons*/
@@ -144,7 +150,7 @@ div#partenaires_bas div{ /*gestion du positionnement des boutons*/
 }
 
 .assises {
-    width: 14vw; /* Ajustez la largeur et la hauteur à votre convenance */
+    width: 13vw; /* Ajustez la largeur et la hauteur à votre convenance */
     height: 10vw;
 }
 
