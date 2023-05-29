@@ -1,4 +1,5 @@
 {
+    // Informations d'identification des utilisateurs
     "utilisateurs": [
         {
             "email": "exemple1@example.com",

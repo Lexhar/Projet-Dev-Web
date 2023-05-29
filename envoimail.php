@@ -1,3 +1,5 @@
+<?php
+
 // Inclure la bibliothèque PHPMailer
 require 'vendor/autoload.php';
 
@@ -44,3 +46,5 @@ try {
 } catch (Exception $e) {
     echo 'Une erreur est survenue lors de l\'envoi du courriel : ' . $mail->ErrorInfo;
 }
+
+?>
