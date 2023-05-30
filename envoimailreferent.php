@@ -13,14 +13,18 @@ try {
     $smtpPassword = 'your_smtp_password';
     $smtpPort = 587;
 
-    // Configuration SMTP
+    /*Configuration SMTP
     $mail->isSMTP();
     $mail->Host = $smtpHost;
     $mail->SMTPAuth = true;
     $mail->Username = $smtpUsername;
     $mail->Password = $smtpPassword;
     $mail->SMTPSecure = 'tls';
-    $mail->Port = $smtpPort;
+    $mail->Port = $smtpPort;*/
+
+    /* Rechercher la fonction mail sur internet et l'intégrer au code 
+     
+       Dorian utiliser php sur son ordi */
 
     // Destinataire et expéditeur
     $recipientEmail = 'referent@example.com';
