@@ -11,7 +11,7 @@
         <img class="jeune" src="images/Jeunes.png" alt="logo">
     </div>
     <div class="Utilisateur">
-        <p class="Utilisateur" >JEUNE</p>
+        <p class="Utilisateur">JEUNE</p>
         <p class="action">Je donne de la valeur à mon engagement</p>
     </div>
 </div>
@@ -39,69 +39,57 @@
             </button>
         </a>
     </div>
-    
+
 </div>
 
-<div class="consigne"><p>Décrivez votre expérience et mettez en avant ce que vous en avez retiré.</p></div>
-
-
+<div class="consigne">
+    <p>Décrivez votre expérience et mettez en avant ce que vous en avez retiré.</p>
+</div>
 
 <div class="conteneur">
-    <form>
+    <form action="traitement_formulaire.php" method="POST">
         <div id="questionnaire">
-            
+
             <div class="questionnaireCentral">
                 <label for="nom">NOM :</label>
                 <input type="text" id="nom" name="nom"/><br><br>
-                <label for="nom">PRENOM :</label>
+                <label for="prenom">PRENOM :</label>
                 <input type="text" id="prenom" name="prenom"/><br><br>
-                <label for="nom">DATE DE NAISSANCE :</label>
+                <label for="date">DATE DE NAISSANCE :</label>
                 <input type="text" id="date" name="date"/><br><br>
-                <label for="nom">Mail :</label>
+                <label for="mail">Mail :</label>
                 <input type="email" id="mail" name="mail"/><br><br>
-                <label for="nom">Reseau social :</label>
-                <input type="text" id="réseauS" name="réseauS"/><br></br><br>
-                <label for="nom">MON ENGAGEMENT :</label>
+                <label for="réseauS">Reseau social :</label>
+                <input type="text" id="réseaus" name="réseauS"/><br><br>
+                <label for="presentation">MON ENGAGEMENT :</label>
                 <input type="text" id="presentation" name="presentation"/><br><br>
-                <label for="nom">DUREE :</label>
+                <label for="duree">DUREE :</label>
                 <input type="text" id="duree" name="duree"/>
             </div>
             <div class="questionnaireDroit">
                 <p class="savoirEtre">MES SAVOIRS ETRE</p>
                 <div class="tab">
                     <p class="confirme">Je suis*</p>
-                     <div class="radio">
-                        <input type="checkbox" name="savoir_etre" value="Autonome"/>Autonome
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="bienveillance"/>Passionné
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Réfléchis"/>Réfléchis
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="A l'écoute"/>A l'écoute
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Organisé"/>Organisé
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Passionné"/>Passionné
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Fiable"/>Fiable
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Patient"/>Patient
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Motivé"/>Motivé
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Responsable"/>Responsable
-                        <br>
-                        <input type="checkbox" name="savoir_etre" value="Sociable"/>Sociable
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Optmiste"/>Optmiste
-                        </br>
-                        <input type="checkbox" name="savoir_etre" value="Rigoureux"/>Rigoureux
+                    <div class="radio">
+                        <input type="checkbox" name="savoir_etre[]" value="Autonome"/>Autonome<br>
+                        <input type="checkbox" name="savoir_etre[]" value="bienveillance"/>Passionné<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Réfléchis"/>Réfléchis<br>
+                        <input type="checkbox" name="savoir_etre[]" value="A l'écoute"/>A l'écoute<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Organisé"/>Organisé<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Passionné"/>Passionné<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Fiable"/>Fiable<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Patient"/>Patient<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Motivé"/>Motivé<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Responsable"/>Responsable<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Sociable"/>Sociable<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Optmiste"/>Optmiste<br>
+                        <input type="checkbox" name="savoir_etre[]" value="Rigoureux"/>Rigoureux<br>
                     </div>
                 </div>
-                
+
                 <div class="bouton-valider">
                     <button type="submit" class="image-bouton">
-                    <img class="valider" src="images/valider_rose.png" alt="Bouton Valider">
+                        <img class="valider" src="images/valider_rose.png" alt="Bouton Valider">
                     </button>
                 </div>
             </div>
