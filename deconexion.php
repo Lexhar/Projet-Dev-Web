@@ -5,6 +5,6 @@
     unset($_SESSION['user']);
 
     // Rediriger vers la page d'accueil
-    header('Location: index.php');
+    header('Location: page-accueil.html');
     exit();
 ?>

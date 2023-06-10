@@ -1,28 +1,25 @@
-<?php
-session_start(); // Démarrage de la session
+<?phpsession_start(); // Démarrage de la session
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification si les champs sont remplis
-    if (!empty($_POST['commentaire']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['date']) && !empty($_POST['mail']) && !empty($_POST['réseauS']) && !empty($_POST['presentation']) && !empty($_POST['duree']) && isset($_POST['savoir_etre'])) {
+    if (!empty($_POST['commentaire']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['date']) && !empty($_POST['mail']) && !empty($_POST['reseau']) && !empty($_POST['presentation']) && !empty($_POST['duree']) && isset($_POST['savoir_etre'])) {
         // Récupération des données du formulaire
-        $commentaire = $_POST['commentaire'];
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
         $date = $_POST['date'];
         $mail = $_POST['mail'];
-        $réseauS = $_POST['réseauS'];
+        $reseau = $_POST['reseau'];
         $presentation = $_POST['presentation'];
         $duree = $_POST['duree'];
         $savoir_etre = $_POST['savoir_etre']; // $savoir_etre est un tableau contenant les valeurs sélectionnées
 
         // Construction de la demande de référence
         $demande_reference = array(
-            'commentaire' => $commentaire,
             'nom' => $nom,
             'prenom' => $prenom,
             'date' => $date,
             'mail' => $mail,
-            'réseauS' => $réseauS,
+            'reseau' => $reseau,
             'presentation' => $presentation,
             'duree' => $duree,
             'savoir_etre' => $savoir_etre
@@ -51,4 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: formulaire.php');
     exit;
 }
+
 ?>
+
