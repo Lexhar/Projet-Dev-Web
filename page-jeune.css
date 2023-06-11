@@ -5,12 +5,14 @@ div#en_tête {
     background: linear-gradient(to left, rgb(158, 156, 156), rgb(216, 213, 213));
 }
 
+/* Style pour les sections "div.logo" et "div.Utilisateur" */
 div.logo, div.Utilisateur {
     width: 49%;
     height: 150%;
     margin-bottom: 5;
 }
 
+/* Style pour le paragraphe "p.Utilisateur" */
 p.Utilisateur {
     font-size: 360%;
     color: rgb(212, 34, 173);
@@ -21,6 +23,7 @@ p.Utilisateur {
     font-weight: bold;
 }
 
+/* Style pour le paragraphe "p.action" */
 p.action {
     font-size: 200%;
     color: white;
@@ -45,15 +48,18 @@ img.connexion {
     align-items: center; /* Aligne les items verticalement */
   }
 
+/* Style pour la classe ".connexion" */
   .connexion {
 
 margin-right: 4.2vw;
 }
 
+/* Style pour l'image "img.valider" */
 img.valider {
     width: 2.5vw;
 }
 
+/* Style pour la section "div#onglet a:hover" */
 div#onglet a:hover {
     background-color: rgb(202, 202, 144);
 }
@@ -78,6 +84,7 @@ div#onglet .partenaires a {
     text-decoration: none;
 }
 
+/* Style pour la section "div#onglet" */
 div#onglet {
     display: flex;
     padding: 0.5vw;
@@ -89,6 +96,7 @@ div#onglet {
     justify-content: space-around;
 }
 
+/* Style pour la section "div#onglet div" */
 div#onglet div {
     flex: 1;
     display: flex;
@@ -105,7 +113,7 @@ div#questionnaire {
 }
 
 
-
+/* Style pour la section "div.questionnaireCentral" */
 div.questionnaireCentral {
         margin-left: 25vw;
         font-size: 1.4vw;
@@ -118,6 +126,7 @@ div.questionnaireCentral {
         width: 45%;
 }
     
+/* Style pour la section "div.consigne" */
 div.consigne {
     font-size: 1.6vw;
     color: rgb(212, 34, 173);
@@ -125,13 +134,13 @@ div.consigne {
     margin-bottom: 3%;
 }
 
-
+/* Style pour la section "div.questionnaireDroit" */
 div.questionnaireDroit {
     width: 15%;
     margin-right: 5%;
 }
 
-
+/* Style pour la section "div.radio" */
 div.radio {
     font-size: 1.2vw;
     padding-top: 5%;
@@ -179,6 +188,7 @@ p.confirme {
     background: linear-gradient(to left, rgb(192, 23, 184), rgb(239, 174, 235));
 }
 
+/* Style pour les saisies de texte "input[type="text"]" et "input[type="email"]" */
 input[type="text"], input[type="email"] {
     display: inline-block;
     border: none;
@@ -195,7 +205,7 @@ input[type="text"], input[type="email"] {
 
 
 
-
+/* Style pour la section "div.bouton-valider" */
 div.bouton-valider {
     display: flex;
     justify-content: center; /* Centre horizontalement */
@@ -203,6 +213,7 @@ div.bouton-valider {
     margin-top: 10%; /* Ajustez selon vos besoins */
 }
 
+/* Style pour la classe "image-bouton" */
 .image-bouton {
     background: none;
     border: none;
