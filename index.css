@@ -1,40 +1,44 @@
 .login-form {
-    width: 34vw;
-    margin: 50px auto;
+    width: 34vw; /* Largeur du formulaire de connexion */
+    margin: 50px auto; /* Marge extérieure pour centrer le formulaire horizontalement */
 }
+
 .login-form form {
-    margin-bottom: 15px;
-    background: #f7f7f7;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 30px;
+    margin-bottom: 15px; /* Marge inférieure pour espacement entre le formulaire et les autres éléments */
+    background: #f7f7f7; /* Couleur de fond du formulaire */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); /* Ombre autour du formulaire */
+    padding: 30px; /* Espacement intérieur du formulaire */
 }
+
 .login-form h2 {
-    margin: 0 0 15px;
+    margin: 0 0 15px; /* Marge inférieure pour le titre du formulaire */
 }
-.form-control, .btn {
-    min-height: 38px;
-    border-radius: 2px;
+
+.form-control,
+.btn {
+    min-height: 38px; /* Hauteur minimale des champs de saisie et des boutons */
+    border-radius: 2px; /* Bordure arrondie des champs de saisie et des boutons */
 }
+
 .btn {        
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 15px; /* Taille de police du bouton */
+    font-weight: bold; /* Graisse de police du bouton */
 }
 
-
-body{
-    background: linear-gradient(to left, rgb(110, 36, 60), rgb(140, 88, 133));
+body {
+    background: linear-gradient(to left, rgb(110, 36, 60), rgb(140, 88, 133)); /* Dégradé de couleur de fond du corps de la page */
 }
 
 img {
-    width: 22vw;
-    height: 12vw;
-    margin-bottom: 2vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    width: 22vw; /* Largeur de l'image */
+    height: 12vw; /* Hauteur de l'image */
+    margin-bottom: 2vw; /* Marge inférieure de l'image */
+    display: block; /* Affichage en tant que bloc pour centrer l'image horizontalement */
+    margin-left: auto; /* Marge gauche automatique pour centrer l'image horizontalement */
+    margin-right: auto; /* Marge droite automatique pour centrer l'image horizontalement */
 }
 
-a{
-    font-size: 2vw;
+a {
+    font-size: 2vw; /* Taille de police des liens */
 }
+
