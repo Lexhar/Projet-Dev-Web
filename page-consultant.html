@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		
-
+		<!-- Onglets de navigation -->
         <div id="onglet">
             <div class="jeune">
                 <a href="accesrestreint.php">JEUNE</a>
@@ -32,18 +32,17 @@
             </div>
         </div>
 
-
-
-
+		<!-- Section principale -->
 		<div style="display: grid; place-items: center;">
 			<p class="consigne"> Validez cet engagement en prenant en compte sa valeur</p>
-		  </div>
+		</div>
 
 		<div class="main-container">
             <div class="left-side">
               <div class="container">
-                <div class="left"><div class="left"> 
+                <div class="left">
                     <h2 style="color: hsla(342, 100%, 50%, 0.897);">Jeune</h2>
+                    <!-- Formulaire pour les informations du jeune -->
                     <label class="form-label">Nom :</label>
                     <input class="form-input" type="text" placeholder="Entrez votre nom"><br><br>
                     <label class="form-label">Prénom :</label>
@@ -57,24 +56,29 @@
                     <label class="form-label">Mon engagement :</label>
                     <input class="form-input" type="text" placeholder="Entrez votre engagement"><br><br>
                     <label class="form-label">Durée de mon engagement :</label>
-                    <input class="form-input" type="text" placeholder="Entrez la durée de votre engagement"><br><br></div></div>
-                <div class="right"><p class="savoirEtre_gauche">MES SAVOIRS ETRE</p>
+                    <input class="form-input" type="text" placeholder="Entrez la durée de votre engagement">
+                </div>
+                <div class="right">
+                    <p class="savoirEtre_gauche">MES SAVOIRS ETRE</p>
                     <div class="tab">
                         <p class="confirme_gauche">Je confirme sa (son)*</p>
                          <div class="radio_gauche">
+                            <!-- Options de savoir-être -->
                             <input type="checkbox" name="savoir_etre" value="Autonomie"/>Autonomie
-                            </br>
+                            <br>
                             <input type="checkbox" name="savoir_etre" value="Passioné"/>Passioné
-                            </br>
+                            <br>
                             <input type="checkbox" name="savoir_etre" value="Réfléchi"/>Réfléchi
                          </div>
-                    </div></div>
+                    </div>
+                </div>
               </div>
             </div>
             <div class="right-side">
                 <div class="right-container">
-                  <div class="left"><div class="Referent">
+                  <div class="left">
                     <h2 style="color: #9aee13;">Référent</h2>
+                    <!-- Formulaire pour les informations du référent -->
                     <label class="form-label">Nom :</label>
                     <input class="form-input" type="text" placeholder="Entrez votre nom"><br><br>
                     <label class="form-label">Prénom :</label>
@@ -89,25 +93,23 @@
                     <input class="form-input" type="text" placeholder="Entrez votre engagement"><br><br>
                     <label class="form-label">Durée de mon engagement :</label>
                     <input class="form-input" type="text" placeholder="Entrez la durée de votre engagement">
-                </div></div>
-                  <div class="right"><p class="savoirEtre_droit">SES SAVOIRS ETRE</p>
+                </div>
+                <div class="right">
+                    <p class="savoirEtre_droit">SES SAVOIRS ETRE</p>
                     <div class="tab">
                         <p class="confirme_droite">Je confirme sa (son)*</p>
                          <div class="radio_droite">
+                            <!-- Options de savoir-être -->
                             <input type="checkbox" name="savoir_etre" value="confiance"/>Confiance
-                            </br>
+                            <br>
                             <input type="checkbox" name="savoir_etre" value="bienveillance"/>Bienveillance
-                            </br>
+                            <br>
                             <input type="checkbox" name="savoir_etre" value="respect"/>Respect
                          </div>
-                    </div></div>
+                    </div>
                 </div>
               </div>
             </div>
-
-		    </form>
-	    </div>
-		
-		
+        </div>
 	</body>
 </html>
