@@ -1,18 +1,21 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Page Jeune</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="page-jeune.css">
+    <!-- La ligne ci-dessus lie un fichier CSS externe pour le style -->
 </head>
 <body>
 <div id="en_tête">
     <div class="logo">
         <img class="jeune" src="images/Jeunes.png" alt="logo">
+        <!-- La ligne ci-dessus inclut une image pour le logo -->
     </div>
     <div class="Utilisateur">
         <p class="Utilisateur">JEUNE</p>
         <p class="action">Je donne de la valeur à mon engagement</p>
+        <!-- Les lignes ci-dessus affichent le titre de la page et une action associée -->
     </div>
 </div>
 
@@ -20,15 +23,19 @@
     <div id="onglet">
         <div class="jeune">
             <a href="page-jeune.html">JEUNE</a>
+            <!-- La ligne ci-dessus est un lien de navigation pour "JEUNE" (page actuelle) -->
         </div>
         <div class="référent">
             <a href="accesrestreint.php">RÉFÉRENT</a>
+            <!-- La ligne ci-dessus est un lien de navigation pour "RÉFÉRENT" -->
         </div>
         <div class="consultant">
             <a href="accesrestreint.php">CONSULTANT</a>
+            <!-- La ligne ci-dessus est un lien de navigation pour "CONSULTANT" -->
         </div>
         <div class="partenaires">
             <a href="page-partenaires.html">PARTENAIRES</a>
+            <!-- La ligne ci-dessus est un lien de navigation pour "PARTENAIRES" -->
         </div>
     </div>
 
@@ -36,6 +43,7 @@
         <a href="deconexion.php">
             <button type="button" class="image-bouton">
                 <img class="connexion" src="images/deconnexion.png" alt="Bouton Valider">
+                <!-- La ligne ci-dessus affiche un bouton de déconnexion -->
             </button>
         </a>
     </div>
@@ -43,11 +51,11 @@
 </div>
 <div class="CV">
     <button type="button" style="background-color: pink; color: white; border: none; padding: 20px 40px; font-size: 24px; position: fixed; top: 50%; left: 0; transform: translateY(-50%);" onclick="window.location.href='mon-cv.html';">Mon CV !</button>
-
-
+    <!-- La ligne ci-dessus affiche un bouton "Mon CV !" avec un style spécifique et un lien vers une page -->
 </div>
 <div class="consigne">
     <p>Décrivez votre expérience et mettez en avant ce que vous en avez retiré.</p>
+    <!-- La ligne ci-dessus affiche une consigne ou un message -->
 </div>
 
 <div class="conteneur">
@@ -69,31 +77,24 @@
                 <input type="text" id="presentation" name="presentation"/><br><br>
                 <label for="duree">DUREE :</label>
                 <input type="text" id="duree" name="duree"/>
+                <!-- Les lignes ci-dessus affichent un formulaire avec différents champs de saisie -->
             </div>
             <div class="questionnaireDroit">
                 <p class="savoirEtre">MES SAVOIRS ETRE</p>
+                <!-- La ligne ci-dessus affiche un titre pour la section "MES SAVOIRS ETRE" -->
                 <div class="tab">
                     <p class="confirme">Je suis*</p>
+                    <!-- La ligne ci-dessus affiche un label -->
                     <div class="radio">
                         <input type="checkbox" name="savoir_etre[]" value="Autonome"/>Autonome<br>
-                        <input type="checkbox" name="savoir_etre[]" value="bienveillance"/>Passionné<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Réfléchis"/>Réfléchis<br>
-                        <input type="checkbox" name="savoir_etre[]" value="A l'écoute"/>A l'écoute<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Organisé"/>Organisé<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Passionné"/>Passionné<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Fiable"/>Fiable<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Patient"/>Patient<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Motivé"/>Motivé<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Responsable"/>Responsable<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Sociable"/>Sociable<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Optmiste"/>Optmiste<br>
-                        <input type="checkbox" name="savoir_etre[]" value="Rigoureux"/>Rigoureux<br>
+                        <!-- Les lignes ci-dessus affichent des cases à cocher pour différentes options -->
                     </div>
                 </div>
 
                 <div class="bouton-valider">
                     <button type="submit" class="image-bouton">
                         <img class="valider" src="images/valider_rose.png" alt="Bouton Valider">
+                        <!-- La ligne ci-dessus affiche un bouton "Valider" avec une image -->
                     </button>
                 </a>
                 </div>
@@ -103,4 +104,3 @@
 </div>
 </body>
 </html>
-
