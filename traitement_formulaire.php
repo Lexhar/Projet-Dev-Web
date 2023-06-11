@@ -1,8 +1,7 @@
 <?php
-
 session_start(); // Démarrage de la session
 
- if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification si les champs sont remplis
     if (!empty($_POST['commentaire']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['date']) && !empty($_POST['mail']) && !empty($_POST['reseau']) && !empty($_POST['presentation']) && !empty($_POST['duree']) && isset($_POST['savoir_etre'])) {
         // Récupération des données du formulaire
@@ -32,61 +31,56 @@ session_start(); // Démarrage de la session
 
         // Envoi du courriel de présentation au Référent avec le lien de confirmation
         $email_subject = "Présentation du projet Jeunes 6.4 - Demande de référence";
-       
-       // Inclure la bibliothèque PHPMailer
-require 'vendor/autoload.php';
 
-// Créer une nouvelle instance de PHPMailer
-$mail = new PHPMailer(true);
+        // Inclure la bibliothèque PHPMailer
+        require 'vendor/autoload.php';
 
-try {
-    // Paramètres SMTP
-    $smtpHost = 'tea.o2switch.net';
-    $smtpUsername = 'jeune070';
-    $smtpPassword = 'ddfwlhiqprtfxerl';
-    $smtpPort = 465 ;
-    // Configuration SMTP
-    $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";
-    $mail->SMTPAuth = true;
-    $mail->Username = $smtpUsername;
-    $mail->Password = $smtpPassword;
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = $smtpPort;
+        // Créer une nouvelle instance de PHPMailer
+        $mail = new PHPMailer(true);
 
-    // Destinataire et expéditeur
-    $recipientEmail = $_POST['mail'];
-    $senderEmail = 'jeune070@gmail.com';
+        try {
+            // Paramètres SMTP
+            $smtpHost = 'smtp.gmail.com';
+            $smtpUsername = 'jeune070';
+            $smtpPassword = 'ddfwlhiqprtfxerl';
+            $smtpPort = 587;
+            // Configuration SMTP
+            $mail->isSMTP();
+            $mail->Host = $smtpHost;
+            $mail->SMTPAuth = true;
+            $mail->Username = $smtpUsername;
+            $mail->Password = $smtpPassword;
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = $smtpPort;
 
-    // Contenu du message
-    $actual_link = "http://$_SERVER[HTTP_HOST]";
-    $subject = 'Présentation du projet Jeunes 6.4';
-    $body = 'Bonjour,<br><br>Vous avez reçu une demande de référence sur le projet Jeunes 6.4.<br><br>Veuillez cliquer sur le lien suivant pour confirmer votre participation : <a href="http://$actual_link/page-référent">Confirmer la demande</a><br><br>Cordialement,<br>L\'équipe Jeunes 6.4';
+            // Destinataire et expéditeur
+            $recipientEmail = $_POST['mail'];
+            $senderEmail = 'jeune070@gmail.com';
 
-    // Configurer le destinataire et l'expéditeur
-    $mail->setFrom($senderEmail);
-    $mail->addAddress($recipientEmail);
+            // Contenu du message
+            $actual_link = "http://$_SERVER[HTTP_HOST]";
+            $subject = 'Présentation du projet Jeunes 6.4';
+            $body = 'Bonjour,<br><br>Vous avez reçu une demande de référence sur le projet Jeunes 6.4.<br><br>Veuillez cliquer sur le lien suivant pour confirmer votre participation : <a href="' . $actual_link . '/page-referent">Confirmer la demande</a><br><br>Cordialement,<br>L\'équipe Jeunes 6.4';
 
-    // Contenu du message
-    $mail->isHTML(true);
-    $mail->Subject = $subject;
-    $mail->Body = $body;
+            // Configurer le destinataire et l'expéditeur
+            $mail->setFrom($senderEmail);
+            $mail->addAddress($recipientEmail);
 
-    // Envoyer le courriel
-    $mail->send();
-    // mail($mail, $email_subject, $email_body, $email_headers);
+            // Contenu du message
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body = $body;
 
-        // Redirection vers la page de confirmation
-        header('Location: confirmation.php');
-        
-    echo 'Le courriel de présentation a été envoyé avec succès au référent.';
-      exit;
-} catch (Exception $e) {
-    echo 'Une erreur est survenue lors de l\'envoi du courriel : ' . $mail->ErrorInfo;
-}
+            // Envoyer le courriel
+            $mail->send();
 
-        
-   } else {
+            // Redirection vers la page de confirmation
+            header('Location: confirmation.php');
+            exit;
+        } catch (Exception $e) {
+            echo 'Une erreur est survenue lors de l\'envoi du courriel : ' . $mail->ErrorInfo;
+        }
+    } else {
         // Redirection en cas de champs non remplis
         header('Location: formulaire.php?error=empty_fields');
         exit;
@@ -96,5 +90,4 @@ try {
     header('Location: formulaire.php');
     exit;
 }
-
-?> 
+?>
