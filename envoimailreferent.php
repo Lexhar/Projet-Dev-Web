@@ -8,11 +8,10 @@ $mail = new PHPMailer(true);
 
 try {
     // Paramètres SMTP
-    $smtpHost = 'your_smtp_host';
-    $smtpUsername = 'your_smtp_username';
-    $smtpPassword = 'your_smtp_password';
-    $smtpPort = 587;
-
+    $smtpHost = 'tea.o2switch.net';
+    $smtpUsername = 'jeune070@maebaconsulting';
+    $smtpPassword = 'B6NH6bIiET1c';
+    $smtpPort = 
     // Configuration SMTP
     $mail->isSMTP();
     $mail->Host = $smtpHost;
@@ -23,8 +22,8 @@ try {
     $mail->Port = $smtpPort;
 
     // Destinataire et expéditeur
-    $recipientEmail = 'referent@example.com';
-    $senderEmail = 'jeune6.4@yahoo.com';
+    $recipientEmail = 'emessienerachel@gmail.com';
+    $senderEmail = 'jeune070@gmail.com';
 
     // Contenu du message
     $actual_link = "http://$_SERVER[HTTP_HOST]";
