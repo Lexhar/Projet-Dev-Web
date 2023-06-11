@@ -19,7 +19,7 @@ require_once 'config.php'; // Inclure le fichier de configuration
     if (isset($_GET['reg_err'])) {
         $err = htmlspecialchars($_GET['reg_err']);
 
-        switch ($err) {
+        switch ($err) { // Vérification du type d'erreur et affichage du message correspondant
             case 'success':
                 ?>
                 <div class="alert alert-success">
