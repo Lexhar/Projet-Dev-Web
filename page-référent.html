@@ -4,35 +4,43 @@
 		<title>Page Référent</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="page-référent.css">
+        <!-- La ligne ci-dessus lie un fichier CSS externe pour le style -->
 	</head>
 <body>
 <div id="en_tête">
     <div class="logo">
         <img class="jeune" src="images/Jeunes.png" alt="logo">
+        <!-- La ligne ci-dessus inclut une image pour le logo -->
     </div>
     <div class="Utilisateur">
         <p class="Utilisateur">RÉFÉRENT</p>
         <p class="action">Je confirme la valeur de ton engagement</p>
+        <!-- Les lignes ci-dessus affichent les informations de l'utilisateur et une indication d'action -->
     </div>
 </div>
 
 <div id="onglet">
     <div class="jeune">
         <a href="http://localhost/test/Projet-Dev-Web/index.php">JEUNE</a>
+        <!-- La ligne ci-dessus est un lien de navigation pour "JEUNE" -->
     </div>
     <div class="référent">
         <a href="page-référent.html">RÉFÉRENT</a>
+        <!-- La ligne ci-dessus est un lien de navigation pour "RÉFÉRENT" (page actuelle) -->
     </div>
     <div class="consultant">
         <a href="page-consultant.html">CONSULTANT</a>
+        <!-- La ligne ci-dessus est un lien de navigation pour "CONSULTANT" -->
     </div>
     <div class="partenaires">
         <a href="page-partenaires.html">PARTENAIRES</a>
+        <!-- La ligne ci-dessus est un lien de navigation pour "PARTENAIRES" -->
     </div>
 </div>
 
 <div class="consigne">
     <p>Confirmez cette expérience et ce que vous avez pu constater au contact de ce jeune.</p>
+    <!-- Les lignes ci-dessus affichent une instruction ou un message pour le formulaire -->
 </div>
 
 
@@ -45,6 +53,7 @@
             <div class="bas">
                 <textarea name="commentaire" cols="28" rows="20">
                 </textarea>
+                <!-- Les lignes ci-dessus créent une zone de texte pour saisir des commentaires -->
             </div>
         </div>
         <div class="questionnaireCentral">
@@ -62,12 +71,13 @@
             <input type="text" id="presentation" name="presentation"/><br><br>
             <label for="nom">DUREE :</label>
             <input type="text" id="duree" name="duree"/>
+            <!-- Les lignes ci-dessus créent des champs de saisie pour les informations personnelles -->
         </div>
         <div class="questionnaireDroit">
             <p class="savoirEtre">SES SAVOIRS ETRE</p>
             <div class="tab">
                 <p class="confirme">Je confirme sa (son)*</p>
-                 <div class="radio">
+                <div class="radio">
                     <input type="checkbox" name="savoir_etre" value="confiance"/>Confiance
                     </br>
                     <input type="checkbox" name="savoir_etre" value="bienveillance"/>Bienveillance
@@ -85,21 +95,20 @@
                     <input type="checkbox" name="savoir_etre" value="travail"/>travail
                     </br>
                     <input type="checkbox" name="savoir_etre" value="motivé"/>Motivé
-                 </div>
+                </div>
+                <!-- Les lignes ci-dessus créent des cases à cocher pour confirmer les compétences comportementales -->
             </div>
             <p class="nb_choix">* Faire 4 choix maximum</p>
+            <!-- La ligne ci-dessus affiche une note sur le nombre maximum de choix autorisés -->
             <div class="bouton-valider">
                 <button type="submit" class="image-bouton">
                 <img class="valider" src="images/valider.png" alt="Bouton Valider">
                 </button>
+                <!-- Les lignes ci-dessus créent un bouton de soumission pour le formulaire -->
             </div>
         </div>
     </div>
 </form>
-
-    
-
-
 
 </body>
 </html>
