@@ -86,7 +86,7 @@ try {
 }
 
         
-    } else {
+   } else {
         // Redirection en cas de champs non remplis
         header('Location: formulaire.php?error=empty_fields');
         exit;
@@ -97,4 +97,4 @@ try {
     exit;
 }
 
-?>
+?> 
