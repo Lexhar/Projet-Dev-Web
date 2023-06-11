@@ -1,3 +1,4 @@
+/* Styles pour la classe 'haut' */
 div.haut{
     text-align: center;
     font-size: 200%;
@@ -5,6 +6,7 @@ div.haut{
     font-weight: bold;
 }
 
+/* Styles pour la classe 'bas' */
 div.bas{
     text-align: center;
     font-size: 200%;
@@ -12,6 +14,7 @@ div.bas{
     font-weight: bold;
 }
 
+/* Styles pour la classe 'image' */
 div.image {
     text-align: center;
     
@@ -23,6 +26,7 @@ img{
     margin: 0px;
 }
 
+/* Styles pour la classe 'bouton' */
 div.bouton{
     text-align: center;
 }
@@ -34,11 +38,13 @@ a{
     font-weight: bold;
 }
 
+/* Styles pour le corps de la page */
 body{
     background: linear-gradient(to left, rgb(158, 156, 156), rgb(248, 248, 248));
     padding-bottom: 10%;
 }
 
+/* Styles pour le pied de page */
 footer{
     margin-top: 5%;
     background-color: rgb(251, 249, 249);
