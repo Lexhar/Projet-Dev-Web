@@ -19,7 +19,7 @@ require_once 'config.php'; // Inclure le fichier de configuration
     if (isset($_GET['reg_err'])) {
         $err = htmlspecialchars($_GET['reg_err']);
 
-        switch ($err) { // Vérification du type d'erreur et affichage du message correspondant
+        switch ($err) {
             case 'success':
                 ?>
                 <div class="alert alert-success">
@@ -68,6 +68,22 @@ require_once 'config.php'; // Inclure le fichier de configuration
                 </div>
                 <?php
                 break;
+
+            case 'age':
+                ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> vous devez avoir au moins 16 ans pour vous inscrire
+                </div>
+                <?php
+                break;
+
+            case 'name_letters':
+                ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur</strong> le nom et le prénom doivent être uniquement composés de lettres
+                </div>
+                <?php
+                break;
         }
     }
     ?>
@@ -76,16 +92,22 @@ require_once 'config.php'; // Inclure le fichier de configuration
         <h2 class="text-center">Inscription compte Jeune</h2>
         <div class="jeune"><img src="images/Jeunes.png" alt="logo Jeune"></div>
         <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Email" required="required"
-                   autocomplete="off">
+            <input type="text" name="prenom" class="form-control" placeholder="Prénom" required="required" autocomplete="off">
         </div>
         <div class="form-group">
-            <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required"
-                   autocomplete="off">
+            <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">
         </div>
         <div class="form-group">
-            <input type="password" name="password_retype" class="form-control"
-                   placeholder="Confirmez le mot de passe" required="required" autocomplete="off">
+            <input type="date" name="date_naissance" class="form-control" placeholder="Date de naissance" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password_retype" class="form-control" placeholder="Confirmez le mot de passe" required="required" autocomplete="off">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Inscription</button>
