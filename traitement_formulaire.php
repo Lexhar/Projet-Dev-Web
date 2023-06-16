@@ -29,7 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Stockage de la demande de référence dans la session (ou base de données)
         $_SESSION['demande_reference'] = $demande_reference;
 
-        // Envoi du courriel de présentation au Référent avec le lien de confirmation
+       // Stockage de la demande de référence dans la session (ou base de données)
+       $_SESSION['demande_reference'] = $demande_reference;  // Envoi du courriel de présentation au Référent avec le lien de confirmation
         $email_subject = "Présentation du projet Jeunes 6.4 - Demande de référence";
 
         // Inclure la bibliothèque PHPMailer
@@ -39,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail = new PHPMailer(true);
 
         try {
-            // Paramètres SMTP
+          /*  // Paramètres SMTP
             $smtpHost = 'smtp.gmail.com';
             $smtpUsername = 'jeune070';
             $smtpPassword = 'ddfwlhiqprtfxerl';
@@ -53,9 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->SMTPSecure = 'tls';
             $mail->Port = $smtpPort;
 
-            // Destinataire et expéditeur
+           // Destinataire et expéditeur
             $recipientEmail = $_POST['mail'];
-            $senderEmail = 'jeune070@gmail.com';
+            $senderEmail = 'jeune070@gmail.com'; 
 
             // Contenu du message
             $actual_link = "http://$_SERVER[HTTP_HOST]";
@@ -72,8 +73,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Body = $body;
 
             // Envoyer le courriel
-            $mail->send();
-
+            $mail->send(); */
+            $to_email = $mail;
+            $subject = 'Présentation du projet Jeunes 6.4'; 
+            $actual_link = 'http://$_SERVER[HTTP_HOST]';
+            $body = 'Bonjour,<br><br>Vous avez reçu une demande de référence sur le projet Jeunes 6.4.<br><br>Veuillez cliquer sur le lien suivant pour confirmer votre participation : <a href="' . $actual_link . '/page-referent">Confirmer la demande</a><br><br>Cordialement,<br>L\'équipe Jeunes 6.4';
+            $headers = 'From: jeune070@gmail.com';
+            if (mail($to_email, $subject, $body, $headers)) {
+            echo("Cool $to_email...");
+        } else {
+            echo("Mince...");
+        } 
+        
             // Redirection vers la page de confirmation
             header('Location: confirmation.php');
             exit;
@@ -89,5 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Redirection si accès direct au script
     header('Location: formulaire.php');
     exit;
-}
+} 
+   
+
 ?>
