@@ -1,9 +1,10 @@
 <?php
 session_start(); // Démarrage de la session
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification si les champs sont remplis
-    if (!empty($_POST['commentaire']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['date']) && !empty($_POST['mail']) && !empty($_POST['reseau']) && !empty($_POST['presentation']) && !empty($_POST['duree']) && isset($_POST['savoir_etre'])) {
+    if (/*!empty($_POST['commentaire']) && */ !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['date']) && !empty($_POST['mail']) && !empty($_POST['reseau']) && !empty($_POST['presentation']) && !empty($_POST['duree']) && isset($_POST['savoir_etre'])) {
         // Récupération des données du formulaire
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
@@ -14,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $duree = $_POST['duree'];
         $savoir_etre = $_POST['savoir_etre']; // $savoir_etre est un tableau contenant les valeurs sélectionnées
 
-        // Construction de la demande de référence
+        // Construction de la demande de référence 
         $demande_reference = array(
             'nom' => $nom,
             'prenom' => $prenom,
@@ -25,72 +26,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'duree' => $duree,
             'savoir_etre' => $savoir_etre
         );
+        
 
-        // Stockage de la demande de référence dans la session (ou base de données)
-        $_SESSION['demande_reference'] = $demande_reference;
+        
+        $to_email = $mail;
+        $subject = 'Présentation du projet Jeunes 6.4 - Demande de référence';
+        $body = 'Bonjour, Vous avez reçu une demande de référence sur le projet Jeunes 6.4.Veuillez cliquer sur le lien suivant pour confirmer votre participation , camtel.bada1033.odns.fr/devweb/page-referent.html Confirmer la demande Cordialement, Jeunes 6.4
+        Si vous ne pouvez pas cliquer sur le lien faites un copier-coller.
+        Merci.';
+        
+        $headers = 'From: jeune070@gmail.com';
+        //$headers .= "Content-type: text/html\r\n";
+        
+        mail($to_email, $subject, $body, $headers);
 
        // Stockage de la demande de référence dans la session (ou base de données)
-       $_SESSION['demande_reference'] = $demande_reference;  // Envoi du courriel de présentation au Référent avec le lien de confirmation
-        $email_subject = "Présentation du projet Jeunes 6.4 - Demande de référence";
+        $_SESSION['demande_reference'] = $demande_reference;
 
-        // Inclure la bibliothèque PHPMailer
-        require 'vendor/autoload.php';
+        header('Location: confirmation-envoi.html');
 
-        // Créer une nouvelle instance de PHPMailer
-        $mail = new PHPMailer(true);
-
-        try {
-          /*  // Paramètres SMTP
-            $smtpHost = 'smtp.gmail.com';
-            $smtpUsername = 'jeune070';
-            $smtpPassword = 'ddfwlhiqprtfxerl';
-            $smtpPort = 587;
-            // Configuration SMTP
-            $mail->isSMTP();
-            $mail->Host = $smtpHost;
-            $mail->SMTPAuth = true;
-            $mail->Username = $smtpUsername;
-            $mail->Password = $smtpPassword;
-            $mail->SMTPSecure = 'tls';
-            $mail->Port = $smtpPort;
-
-           // Destinataire et expéditeur
-            $recipientEmail = $_POST['mail'];
-            $senderEmail = 'jeune070@gmail.com'; 
-
-            // Contenu du message
-            $actual_link = "http://$_SERVER[HTTP_HOST]";
-            $subject = 'Présentation du projet Jeunes 6.4';
-            $body = 'Bonjour,<br><br>Vous avez reçu une demande de référence sur le projet Jeunes 6.4.<br><br>Veuillez cliquer sur le lien suivant pour confirmer votre participation : <a href="' . $actual_link . '/page-referent">Confirmer la demande</a><br><br>Cordialement,<br>L\'équipe Jeunes 6.4';
-
-            // Configurer le destinataire et l'expéditeur
-            $mail->setFrom($senderEmail);
-            $mail->addAddress($recipientEmail);
-
-            // Contenu du message
-            $mail->isHTML(true);
-            $mail->Subject = $subject;
-            $mail->Body = $body;
-
-            // Envoyer le courriel
-            $mail->send(); */
-            $to_email = $mail;
-            $subject = 'Présentation du projet Jeunes 6.4'; 
-            $actual_link = 'http://$_SERVER[HTTP_HOST]';
-            $body = 'Bonjour,<br><br>Vous avez reçu une demande de référence sur le projet Jeunes 6.4.<br><br>Veuillez cliquer sur le lien suivant pour confirmer votre participation : <a href="' . $actual_link . '/page-referent">Confirmer la demande</a><br><br>Cordialement,<br>L\'équipe Jeunes 6.4';
-            $headers = 'From: jeune070@gmail.com';
-            if (mail($to_email, $subject, $body, $headers)) {
-            echo("Cool $to_email...");
-        } else {
-            echo("Mince...");
-        } 
-        
-            // Redirection vers la page de confirmation
-            header('Location: confirmation.php');
-            exit;
-        } catch (Exception $e) {
-            echo 'Une erreur est survenue lors de l\'envoi du courriel : ' . $mail->ErrorInfo;
-        }
     } else {
         // Redirection en cas de champs non remplis
         header('Location: formulaire.php?error=empty_fields');
