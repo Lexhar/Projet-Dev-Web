@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $to_email = $mail;
         $subject = 'Présentation du projet Jeunes 6.4 - Demande de référence';
-        $body = 'Bonjour, Vous avez reçu une demande de consulation sur le projet Jeunes 6.4.Veuillez cliquer sur le lien suivant pour confirmer votre participation , camtel.bada1033.odns.fr/devweb/page-consultant.html Confirmer la demande Cordialement, Jeunes 6.4
+        $body = 'Bonjour, Vous avez reçu une demande de consultation sur le projet Jeunes 6.4.Veuillez cliquer sur le lien suivant pour confirmer votre participation , camtel.bada1033.odns.fr/devweb/page-consultant.html Confirmer la demande Cordialement, Jeunes 6.4
         Si vous ne pouvez pas cliquer sur le lien faites un copier-coller.
         Merci.';
         
